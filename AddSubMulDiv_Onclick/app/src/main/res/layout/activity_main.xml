@@ -61,30 +61,32 @@
             android:layout_margin="3dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="+"/>
+            android:text="+"
+            android:onClick="XuLiCong"/>
 
         <Button
             android:id="@+id/btnTru"
             android:layout_margin="3dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="-"/>
+            android:text="-"
+            android:onClick="XuLiTru"/>
 
         <Button
             android:id="@+id/btnNhan"
             android:layout_margin="3dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="*"/>
+            android:text="*"
+            android:onClick="XuLiNhan"/>
 
         <Button
             android:id="@+id/btnChia"
             android:layout_margin="3dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="/"/>
-
-
+            android:text="/"
+            android:onClick="XuLiChia"/>
     </LinearLayout>
 
     <LinearLayout
@@ -106,7 +108,6 @@
             android:layout_height="wrap_content"
             android:hint="Nơi hiện kết quả "
             android:enabled="false"/>
-
+    </LinearLayout>
 
 </LinearLayout>
-
