@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         );
         auto.setAdapter(adapter);
 
+
         ListView list = findViewById(R.id.List);
         ArrayList<String> dsApp = new ArrayList<>();
         dsApp.add("Zalo");
