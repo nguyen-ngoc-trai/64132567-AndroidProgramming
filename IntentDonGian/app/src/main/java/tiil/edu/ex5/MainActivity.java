@@ -14,7 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
     Button nutMH2;
     Button nutMH3;
-    void Timđk() {
+    void Timdk() {
         nutMH2 = (Button) findViewById(R.id.btnMH2);
         nutMH3 = (Button) findViewById(R.id.btnMH3);
     }
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
         //Tìm đk nút bấm
-        Timđk();
+        Timdk();
         //Gắn bộ lắng nghe
         nutMH2.setOnClickListener(new View.OnClickListener() {
             @Override
