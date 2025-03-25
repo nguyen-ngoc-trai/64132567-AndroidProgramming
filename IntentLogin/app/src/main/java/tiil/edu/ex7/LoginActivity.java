@@ -14,14 +14,16 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class LoginActivity extends AppCompatActivity {
-
+    EditText edtTenDN;
+    EditText edtPass;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_login);
 
-
+        edtTenDN = (EditText) findViewById(R.id.edtUserName);
+        edtPass = (EditText) findViewById(R.id.edtPassword);
         Button btnXacNhan = (Button) findViewById(R.id.btnOK);
 
         btnXacNhan.setOnClickListener(new View.OnClickListener() {
@@ -30,8 +32,7 @@ public class LoginActivity extends AppCompatActivity {
                 //Xử Lí dăng nhap
                 //Lay du lieu
                 //B1: Tìm tham chieu đk
-                EditText edtTenDN = (EditText) findViewById(R.id.edtUserName);
-                EditText edtPass = (EditText) findViewById(R.id.edtPassword);
+
                 //B2: Lấy dữ liệu
                 String tenDăngNhâp = edtTenDN.getText().toString();
                 String mk = edtPass.getText().toString();
