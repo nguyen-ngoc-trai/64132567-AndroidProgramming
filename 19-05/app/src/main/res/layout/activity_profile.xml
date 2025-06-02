@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@drawable/shpe_toolbar">
+        
+        
+        <ImageButton
+            android:id="@+id/btnback"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_back_white"
+            android:padding="5dp"
+            android:layout_margin="20dp"/>
+        <TextView
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EDIT PROFILE"
+            android:layout_marginTop="20dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="110dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/profile">
+
+
+        </com.google.android.material.imageview.ShapeableImageView>
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="220dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_edt"
+                    android:drawableStart="@drawable/baseline_email_24"
+                    android:drawablePadding="18dp"
+                    android:hint="EMAIL"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                android:layout_below="@id/emai"
+                android:layout_marginTop="10dp"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_edt"
+                    android:drawableStart="@drawable/baseline_enhanced_encryption_24"
+                    android:drawablePadding="18dp"
+                    android:hint="PASSWORD"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:id="@+id/nam"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:passwordToggleEnabled="true"
+               android:layout_below="@id/pas"
+               android:layout_marginTop="10dp"
+               app:hintEnabled="false">
+
+               <EditText
+                   android:id="@+id/name"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/shape_edt"
+                   android:drawableStart="@drawable/baseline_account_box_24"
+                   android:drawablePadding="18dp"
+                   android:hint="Họ Và Tên "
+                   android:inputType="textPassword"
+                   android:textColorHint="@color/black" />
+
+           </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnupdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nam"
+                android:background="@drawable/shape_btn"
+                android:layout_marginTop="10dp"
+                android:text="Cập Nhật Thông Tin " />
+
+            <Button
+                android:id="@+id/favo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnupdate"
+                android:background="@drawable/shape_btn"
+                android:layout_marginTop="10dp"
+                android:text="Danh Sách Yêu Thích" />
+
+        </RelativeLayout>
+
+</RelativeLayout>
